@@ -1,0 +1,83 @@
+﻿C00,Malignant neoplasm of lip,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,2,1,1
+C01,Malignant neoplasm of base of tongue,0,0,0,0,0,0,0,0,1,0,5,4,7,14,11,6,5,9,6,2
+C02,Malignant neoplasm of other and unspecified parts of tongue,0,0,0,0,0,0,0,1,1,8,12,32,45,59,56,69,46,31,17,11
+C03,Malignant neoplasm of gum,0,0,0,0,0,0,0,0,0,1,1,3,3,6,4,13,6,8,6,3
+C04,Malignant neoplasm of floor of mouth,0,0,0,0,0,0,0,0,0,0,0,7,2,7,8,3,2,3,1,1
+C05,Malignant neoplasm of palate,0,0,0,0,0,0,0,0,0,0,1,3,8,6,10,7,2,3,3,4
+C06,Malignant neoplasm of other and unspecified parts of mouth,0,0,0,0,0,0,0,0,1,4,5,8,7,22,20,27,15,9,15,9
+C07,Malignant neoplasm of parotid gland,0,0,0,0,0,0,0,0,0,1,4,6,5,10,7,15,19,33,11,11
+C08,Malignant neoplasm of other and unspecified major salivary glands,0,0,0,0,0,0,0,0,1,1,0,3,0,0,4,3,5,1,1,2
+C09,Malignant neoplasm of tonsil,0,0,0,0,0,0,0,1,1,6,9,25,28,32,30,26,24,12,3,2
+C10,Malignant neoplasm of oropharynx,0,0,0,0,0,0,0,1,2,2,9,20,26,33,39,33,19,10,4,7
+C11,Malignant neoplasm of nasopharynx,0,0,0,0,0,0,0,1,2,6,6,10,7,10,4,8,5,6,6,3
+C12,Malignant neoplasm of pyriform sinus,0,0,0,0,0,0,0,0,0,0,4,4,5,15,17,18,6,5,3,0
+C13,Malignant neoplasm of hypopharynx,0,0,0,0,0,0,0,0,0,1,3,8,6,17,21,19,11,7,3,5
+C14,"Malignant neoplasm of other and ill-defined sites in the lip, oral cavity and pharynx",0,0,0,0,0,0,0,1,0,4,6,7,10,23,16,16,18,15,4,8
+C15,Malignant neoplasm of oesophagus,0,0,0,0,0,2,2,8,14,22,96,194,315,455,665,787,724,583,415,230
+C16,Malignant neoplasm of stomach,0,0,0,0,0,0,2,4,11,26,34,83,127,167,231,317,366,427,287,161
+C17,Malignant neoplasm of small intestine,0,0,0,0,0,0,0,0,2,1,4,7,17,19,38,36,48,25,23,11
+C18-C20,Malignant neoplasm of colon and rectum,0,0,0,0,0,6,11,31,51,53,137,227,403,604,834,1085,1125,1317,1017,608
+C18,Malignant neoplasm of colon,0,0,0,0,0,3,5,17,27,24,71,108,188,294,385,564,580,760,613,377
+C19,Malignant neoplasm of rectosigmoid junction,0,0,0,0,0,2,2,9,10,10,26,51,74,141,189,231,237,204,165,71
+C20,Malignant neoplasm of rectum,0,0,0,0,0,1,4,5,14,19,40,68,141,169,260,290,308,353,239,160
+C21,Malignant neoplasm of anus and anal canal,0,0,0,0,1,0,0,1,1,3,3,6,13,12,13,24,10,21,13,5
+C22,Malignant neoplasm of liver and intrahepatic bile ducts,0,3,0,0,2,1,3,9,10,27,45,106,197,268,379,476,464,429,280,118
+C23,Malignant neoplasm of gallbladder,0,0,0,0,0,0,1,0,0,1,0,3,4,9,15,25,32,41,15,10
+C24,Malignant neoplasm of other and unspecified parts of biliary tract,0,0,0,0,0,0,0,0,0,2,1,4,9,13,22,19,20,33,33,6
+C25,Malignant neoplasm of pancreas,0,0,0,0,0,1,4,1,12,31,72,155,218,358,579,679,712,586,385,184
+C26,Malignant neoplasm of other and ill-defined digestive organs,0,0,0,0,0,1,1,4,15,16,21,32,63,84,118,198,211,245,230,150
+C30,Malignant neoplasm of nasal cavity and middle ear,0,0,0,0,1,1,0,0,0,1,0,0,0,2,2,0,1,2,0,1
+C31,Malignant neoplasm of accessory sinuses,0,0,0,0,1,0,0,1,1,1,2,3,2,5,9,12,13,9,5,3
+C32,Malignant neoplasm of larynx,0,0,0,0,0,0,0,0,0,5,14,30,38,57,90,91,85,65,49,27
+C33-C34,"Malignant neoplasm of trachea, bronchus and lung",0,0,0,0,0,1,4,3,24,59,177,421,759,1411,2147,2801,2792,2364,1512,754
+C33,Malignant neoplasm of trachea,0,0,0,0,0,0,0,0,1,0,0,0,2,1,4,3,2,1,1,0
+C34,Malignant neoplasm of bronchus and lung,0,0,0,0,0,1,4,3,23,59,177,421,757,1410,2143,2798,2790,2363,1511,754
+C37,Malignant neoplasm of thymus,0,0,0,0,0,0,0,0,0,3,0,2,2,2,3,5,1,0,3,0
+C38,"Malignant neoplasm of heart, mediastinum and pleura",0,0,0,0,0,0,0,1,0,2,2,1,2,5,5,3,7,10,8,6
+C39,Malignant neoplasm of other and ill-defined sites in the respiratory system and intrathoracic organs,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+C40,Malignant neoplasm of bone and articular cartilage of limbs,0,0,0,0,0,1,1,0,1,0,0,0,2,0,2,0,2,0,0,0
+C41,Malignant neoplasm of bone and articular cartilage of other and unspecified sites,0,0,0,3,11,5,10,3,8,3,6,7,10,9,21,21,16,22,6,3
+C43,Malignant melanoma of skin,0,0,0,0,1,1,4,12,11,23,49,58,76,95,132,173,160,143,102,79
+C45,Mesothelioma,0,0,0,0,0,0,0,0,0,3,7,15,32,85,229,368,395,330,230,82
+C46,Kaposi's sarcoma,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0
+C47,Malignant neoplasm of peripheral nerves and autonomic nervous system,0,0,0,0,0,0,1,0,1,0,1,1,0,3,2,1,0,1,0,0
+C48,Malignant neoplasm of retroperitoneum and peritoneum,0,0,1,0,1,0,0,1,0,0,2,3,6,2,4,12,9,7,3,2
+C49,Malignant neoplasm of other connective and soft tissue,1,1,2,2,10,0,5,4,10,8,13,21,36,33,52,65,71,57,36,25
+C50,Malignant neoplasm of breast,0,0,0,0,0,0,0,0,0,2,2,3,4,5,10,9,9,3,13,7
+C60,Malignant neoplasm of penis,0,0,0,0,0,0,0,0,1,2,5,6,8,17,14,17,14,11,15,8
+C61,Malignant neoplasm of prostate,0,0,0,0,0,1,1,0,1,4,10,48,134,319,715,1240,1562,2044,2286,1781
+C62,Malignant neoplasm of testis,0,0,0,0,0,1,4,4,8,4,5,11,0,3,7,4,2,1,0,3
+C63,Malignant neoplasm of other and unspecified male genital organs,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,1
+C64,"Malignant neoplasm of kidney, except renal pelvis",0,2,1,0,1,1,2,4,9,17,57,102,142,203,256,322,275,267,249,132
+C65,Malignant neoplasm of renal pelvis,0,0,0,0,0,0,0,0,0,0,1,1,0,2,0,4,4,4,5,2
+C66,Malignant neoplasm of ureter,0,0,0,0,0,0,0,1,0,0,0,3,6,3,11,27,27,27,19,12
+C67,Malignant neoplasm of bladder,0,0,0,0,0,0,0,1,3,16,20,39,80,142,247,442,499,699,609,450
+C68,Malignant neoplasm of other and unspecified urinary organs,0,0,0,0,0,0,0,0,0,2,0,1,8,8,14,25,23,21,23,6
+C69,Malignant neoplasm of eye and adnexa,0,0,1,0,0,0,0,0,1,0,3,5,4,6,6,10,13,5,4,3
+C70,Malignant neoplasm of meninges,0,0,0,0,0,0,1,0,0,0,0,1,2,0,2,3,1,1,0,1
+C71,Malignant neoplasm of brain,0,10,21,11,14,10,18,29,51,79,107,156,206,242,310,307,232,186,76,42
+C72,"Malignant neoplasm of spinal cord, cranial nerves and other parts of central nervous system",0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,1,2,2,0
+C73,Malignant neoplasm of thyroid gland,0,0,0,0,0,0,0,0,0,3,5,4,7,13,24,28,22,26,15,7
+C74,Malignant neoplasm of adrenal gland,0,9,9,2,0,0,2,0,1,1,5,2,2,2,5,1,3,1,3,0
+C75,Malignant neoplasm of other endocrine glands and related structures,0,0,0,0,0,0,0,0,0,1,3,0,3,0,1,1,2,2,0,0
+C76,Malignant neoplasm of other and ill-defined sites,1,0,1,0,1,0,0,0,4,4,5,2,5,16,11,20,22,22,20,11
+C77,Secondary and unspecified malignant neoplasm of lymph nodes,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+C78,Secondary malignant neoplasm of respiratory and digestive organs,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+C79,Secondary malignant neoplasm of other sites,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+C80,Malignant neoplasm without specification of site,1,2,0,1,3,3,9,10,20,24,48,83,164,243,412,525,553,612,498,315
+C81,Hodgkin's disease,0,0,0,0,1,6,4,4,3,1,4,10,5,6,19,24,27,20,9,5
+C82-C85,Non-Hodgkin's lymphoma,0,0,2,3,2,4,10,9,13,30,37,68,110,121,249,363,381,393,315,133
+C82,Follicular (nodular) non-Hodgkin's lymphoma,0,0,0,0,0,0,1,0,1,0,1,0,7,6,4,17,16,16,17,4
+C83,Diffuse non-Hodgkin's lymphoma,0,0,1,0,1,3,5,5,5,11,9,24,31,32,85,102,124,83,92,34
+C84,Peripheral and cutaneous T-cell lymphomas,0,0,0,1,0,0,1,2,1,5,7,11,15,13,33,22,25,22,9,5
+C85,Other and unspecified types of non-Hodgkin's lymphoma,0,0,1,2,1,1,3,2,6,14,20,33,57,70,127,222,216,272,197,90
+C88,Malignant immunoproliferative diseases,0,0,0,0,0,0,0,0,0,1,0,2,1,3,3,7,8,11,13,6
+C90,Multiple myeloma and malignant plasma cell neoplasms,0,0,0,0,0,0,0,0,4,7,21,44,63,90,153,234,248,283,197,96
+C91-C95,Leukaemia,0,11,10,5,7,14,12,11,12,17,30,59,77,136,243,392,409,447,338,181
+C91,Lymphoid leukaemia,0,5,7,2,3,7,4,3,6,6,7,12,20,33,51,70,88,120,109,89
+C92,Myeloid leukaemia,0,6,3,3,4,5,6,5,6,11,23,44,51,93,162,277,278,258,188,70
+C93,Monocytic leukaemia,0,0,0,0,0,1,0,0,0,0,0,0,2,4,17,28,31,45,25,12
+C94,Other leukaemias of specified cell type,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,2,0,1,0
+C95,Leukaemia of unspecified cell type,0,0,0,0,0,1,2,3,0,0,0,3,4,6,12,17,10,24,15,10
+C96,"Other and unspecified malignant neoplasms of lymphoid, haematopoietic and related tissue",0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1,1,2,2,6
+C97,Malignant neoplasms of independent (primary) multiple sites,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
