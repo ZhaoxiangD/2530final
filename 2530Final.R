@@ -344,7 +344,7 @@ pop1 <- pop1[,-c(1,7,8)]
 #model
 ################################
 library(rstan)
-mod = stan_model(file = 'new-model.stan')
+mod = stan_model(file = 'new-model1.stan')
 sample = sampling(mod, data = list(N = 5, 
                                    K = ncol(cancer13) - 1, 
                                    M = ncol(cancer_cor), 
@@ -354,13 +354,135 @@ sample = sampling(mod, data = list(N = 5,
                                    y16 = as.matrix(cancer16[,-1]),
                                    y17 = as.matrix(cancer17[,-1]),
                                    pop = as.matrix(pop1),
-                                   C = cancer_cor,
                                    X = indicator,
                                    tar_sigma1 = 100,
                                    tar_sigma2 = 100,
                                    rho1 = 0.4,
-                                   rho2 = 0.4,
-                                   tar_gamma1 = 100,
-                                   tar_gamma2 = 100,
-                                   tar_theta = 100),
-                  chains = 4, iter = 10000)
+                                   rho2 = 0.4),
+                  chains = 2, iter = 1000)
+
+
+
+#saveRDS(sample, 'sample_best.rds')
+#sample = readRDS('sample_best.rds')
+model_p = extract(sample, pars='p_post')$p_post
+model_theta = extract(sample, pars='theta_post')$theta_post
+
+plot(sample, plotfun = 'trace', pars = 'alpha2', inc_warmup = F)
+plot(sample, plotfun = 'trace', pars = 'beta', inc_warmup = F)
+
+
+plot(model_p[1:1000,1,5,1], type = "l", col = "blue")
+lines(model_p[1001:2000,1,5,1], col = "red")
+lines(model_p[2001:3000,1,5,1], col = "green")
+
+plot(model_theta[1:250,5,5,10], type = "l", col = "blue")
+lines(model_theta[251:500,5,5,10], col = "red")
+lines(model_theta[501:750,5,5,10], col = "green")
+
+
+plot(model_p[500,1,5,1:20], type = "l", col = "blue")
+plot(model_theta[500,1,5,1:20], type = "l", col = "blue")
+
+
+#saveRDS(sample_y, 'sample_y_best.rds')
+sample_y = readRDS('sample_y_best.rds')
+
+plot(sample_y, plotfun = 'trace', pars = 'alpha1', inc_warmup = F)
+plot(sample_y, plotfun = 'trace', pars = 'beta', inc_warmup = F)
+plot(sample_y, plotfun = 'trace', pars = 'alpha2', inc_warmup = F)
+
+
+plot(model_p[1:500,1,3,1], type = "l", col = "blue")
+lines(model_p[501:1000,1,3,1], col = "red")
+
+
+
+plot(model_theta[1:500,1,3,20], type = "l", col = "blue", ylab = c("theta"),
+     main = "Trace plot of theta in year 2013, age group: 90+, Cancer type: Oesophagus")
+lines(model_theta[501:1000,1,3,20], col = "red")
+lines(model_theta[1001:1500,1,3,20], col = "green")
+
+est_y <- matrix(0, nrow = 10, ncol = 20)
+r_17 <- matrix(0, nrow = 10, ncol = 20)
+for (i in 1:10){
+  for (j in 1:20){
+    est_y[i,j] = mean(model_p[1:1000,i,5,j])/(1-exp(-mean(model_theta[1:1000,i,5,j])))*mean(model_theta[1:1000,i,5,j])
+    r_17[i,j] <- as.numeric((est_y[i,j]/pop1[j,5])*100000)
+  }
+}
+mse_17 <- cancer17[,-1] - est_y
+
+
+est_y <- matrix(0, nrow = 10, ncol = 20)
+r_16 <- matrix(0, nrow = 10, ncol = 20)
+for (i in 1:10){
+  for (j in 1:20){
+    est_y[i,j] = mean(model_p[1:1000,i,4,j])/(1-exp(-mean(model_theta[1:1000,i,4,j])))*mean(model_theta[1:1000,i,4,j])
+    r_16[i,j] = as.numeric((est_y[i,j]/pop1[j,4])*100000)
+  }
+}
+mse_16 <- cancer16[,-1] - est_y
+
+est_y <- matrix(0, nrow = 10, ncol = 20)
+r_15 <- matrix(0, nrow = 10, ncol = 20)
+for (i in 1:10){
+  for (j in 1:20){
+    est_y[i,j] = mean(model_p[1:1000,i,3,j])/(1-exp(-mean(model_theta[1:1000,i,3,j])))*mean(model_theta[1:1000,i,3,j])
+    r_15[i,j] = as.numeric((est_y[i,j]/pop1[j,3])*100000)
+  }
+}
+mse_15 <- cancer15[,-1] - est_y
+
+est_y <- matrix(0, nrow = 10, ncol = 20)
+r_14 <- matrix(0, nrow = 10, ncol = 20)
+for (i in 1:10){
+  for (j in 1:20){
+    est_y[i,j] = mean(model_p[1:1000,i,2,j])/(1-exp(-mean(model_theta[1:1000,i,2,j])))*mean(model_theta[1:1000,i,2,j])
+    r_14[i,j] = as.numeric((est_y[i,j]/pop1[j,2])*100000)
+  }
+}
+mse_14 <- cancer14[,-1] - est_y
+
+est_y <- matrix(0, nrow = 10, ncol = 20)
+r_13 <- matrix(0, nrow = 10, ncol = 20)
+for (i in 1:10){
+  for (j in 1:20){
+    est_y[i,j] = mean(model_p[1:1000,i,1,j])/(1-exp(-mean(model_theta[1:1000,i,1,j])))*mean(model_theta[1:1000,i,1,j])
+    r_13[i,j] = as.numeric((est_y[i,j]/pop1[j,1])*100000)
+  }
+}
+mse_13 <- cancer13[,-1] - est_y
+
+
+
+hist(c(as.vector(t(mse_17)), as.vector(t(mse_16)),as.vector(t(mse_15)), as.vector(t(mse_14)), as.vector(t(mse_13))), breaks = 20, main = "Histogram of model's prediction compare to observations", xlab = "MSE")
+
+asr_17 <- vector()
+for (i in 1:10){
+  asr_17[i] <- sum(r_17[i,] *standard_pop[,5])/sum(standard_pop[,5])
+}
+
+asr_16 <- vector()
+for (i in 1:10){
+  asr_16[i] <- sum(r_16[i,] *standard_pop[,4])/sum(standard_pop[,4])
+}
+
+asr_15 <- vector()
+for (i in 1:10){
+  asr_15[i] <- sum(r_15[i,] *standard_pop[,3])/sum(standard_pop[,3])
+}
+
+asr_14 <- vector()
+for (i in 1:10){
+  asr_14[i] <- sum(r_14[i,] *standard_pop[,2])/sum(standard_pop[,2])
+}
+
+asr_13 <- vector()
+for (i in 1:10){
+  asr_13[i] <- sum(r_13[i,] *standard_pop[,1])/sum(standard_pop[,1])
+}
+
+asr_matrix <- matrix(c(asr_13, asr_14, asr_15, asr_16, asr_17), nrow = 10, ncol = 5)
+asr_matrix <- round(asr_matrix, 2)
+write.csv(asr_matrix, 'asr_matrix.csv')
